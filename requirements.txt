@@ -1,0 +1,5 @@
+bsplyne==1.0.8
+IGA_for_bsplyne==1.0.4
+interpylate==1.0.2
+treeIDW==1.0.1
+volVIC==1.0.2

@@ -25,11 +25,22 @@ We recommend using **Conda** to manage optional but highly recommended high-perf
 ```bash
 conda create -n iga_pipeline python=3.9
 conda activate iga_pipeline
-conda install scikit-sparse  # Highly recommended for large 3D solvers
 ```
 
-### 2. Install the Libraries
-Since `volVIC` depends on both `bsplyne` and `IGA_for_bsplyne`, you can install the full stack via `pip`:
+### 2. Install Optional Dependencies
+```bash
+conda install scikit-sparse  # Highly recommended for large problems
+pip install sparseqr       # Recommended for fast C1 constraint imposition
+```
+
+### 3. Install the Libraries
+To ensure a consistent environment, it is **recommended** to install the exact versions from the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+Alternatively, since `volVIC` depends on both `bsplyne` and `IGA_for_bsplyne`, you can install the full stack (potentially with more recent versions) via `volVIC`:
 
 ```bash
 pip install volVIC

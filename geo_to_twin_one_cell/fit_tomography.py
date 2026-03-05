@@ -41,7 +41,7 @@ with open("out_fitting/mesh_before_icp.pkl", "wb") as file:
 # %%
 def load_tiff_stack(path):
     with Image.open(path) as img:
-        return np.array(tuple(ImageSequence.Iterator(img)))
+        return np.array([np.array(im) for im in ImageSequence.Iterator(img)])
 
 
 image_inside = load_tiff_stack("cropped_CT_scan.tiff")
