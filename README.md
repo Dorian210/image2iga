@@ -30,7 +30,7 @@ conda activate iga_pipeline
 ### 2. Install Optional Dependencies
 ```bash
 conda install scikit-sparse  # Highly recommended for large problems
-pip install sparseqr       # Recommended for fast C1 constraint imposition
+pip install sparseqr         # Recommended for fast C1 constraint imposition
 ```
 
 ### 3. Install the Libraries
