@@ -66,12 +66,25 @@ This repository provides a complete demonstration of an *as-manufactured* digita
 
 If you use this framework in your research, please cite:
 
+* **The method:**
 ```bibtex
-@article{Bichet2026,
+@article{Bichet2024_method,
+  title={Image-to-Isogeometric Analysis: Reconstruction of as-manufactured digital twins from micro-CT scans of lattice structures},
+  author={Bichet, Dorian and Bouclier, Robin and Passieux, Jean-Charles and P{\'e}ri{\'e}, Jean-No{\"e}l},
+  journal={Computer Methods in Applied Mechanics and Engineering},
+  volume={429},
+  pages={117135},
+  year={2024},
+  publisher={Elsevier}
+}
+```
+* **The software:**
+```bibtex
+@article{Bichet2026_software,
   title={image2iga: A JIT-Compiled Python Framework for Image-to-Isogeometric Analysis via Spline Template Fitting},
   author={Bichet, Dorian and Passieux, J-C. and Périé, J-N. and Bouclier, R.},
   year={2026},
-  journal={SoftwareX (Submitted)}
+  journal={Submitted}
 }
 ```
 
