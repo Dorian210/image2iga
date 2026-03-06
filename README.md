@@ -68,14 +68,16 @@ If you use this framework in your research, please cite:
 
 * **The method:**
 ```bibtex
-@article{Bichet2024_method,
-  title={Image-to-Isogeometric Analysis: Reconstruction of as-manufactured digital twins from micro-CT scans of lattice structures},
-  author={Bichet, Dorian and Bouclier, Robin and Passieux, Jean-Charles and P{\'e}ri{\'e}, Jean-No{\"e}l},
+@article{Bichet2025_method,
+  title={Isogeometric multipatch surface fitting in tomographic images: Application to lattice structures},
+  author={Bichet, D. and Passieux, J.C. and Périé, J.N. and Bouclier, R.},
   journal={Computer Methods in Applied Mechanics and Engineering},
-  volume={429},
-  pages={117135},
-  year={2024},
-  publisher={Elsevier}
+  volume={436},
+  pages={117729},
+  year={2025},
+  issn={0045-7825},
+  doi={10.1016/j.cma.2025.117729},
+  url={[https://doi.org/10.1016/j.cma.2025.117729](https://doi.org/10.1016/j.cma.2025.117729)}
 }
 ```
 * **The software:**
