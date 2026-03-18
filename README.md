@@ -1,5 +1,9 @@
 # image2iga: IGA-DigitalTwin-Pipeline
 
+<p align="center">
+  <img src="logo.png" width="500" />
+</p>
+
 An integrated ecosystem for creating **Analysis-Ready Digital Twins** from volumetric images (CT-scans). This repository serves as the central hub and orchestrator for a pipeline bridging Computer-Aided Design (CAD), Virtual Image Correlation (VIC), and IsoGeometric Analysis (IGA).
 
 
