@@ -37,7 +37,7 @@ p = 2
 knot = np.array([0, 0, 0, 1, 1, 1])
 spline_curve = BSpline([p], [knot])
 spline_curve.orderElevation(None, [1])
-spline_curve.knotInsertion(None, [2])
+spline_curve.knotInsertion(None, [4])
 N = spline_curve.DN([xi], k=0)
 
 weights = np.hstack(([1e10], np.ones(N.shape[0] - 2), [1e10]))
@@ -96,7 +96,7 @@ ctrl_pts = np.array([X, Y, Z])
 
 ctrl_pts = spline.orderElevation(ctrl_pts, [0, 2, 2])
 
-ctrl_pts = spline.knotInsertion(ctrl_pts, [0, 3, 10])
+ctrl_pts = spline.knotInsertion(ctrl_pts, [0, 3, 12])
 
 pv_plotter = pv.Plotter()
 spline.plot(ctrl_pts, plotter=pv_plotter, show=False)

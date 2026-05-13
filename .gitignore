@@ -21,11 +21,12 @@ tmp/
 
 # Generated files (examples)
 *.vtu
+*.vtk
 *.pvd
 *.stl
 *.pkl
 *.npy
 
 # Paper content
-geo_to_twin_one_cell/figs
-geo_to_twin_one_cell/make_figs.py
+# geo_to_twin_one_cell/figs
+# geo_to_twin_one_cell/article_scripts

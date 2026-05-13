@@ -44,12 +44,13 @@ def load_tiff_stack(path):
         return np.array([np.array(im) for im in ImageSequence.Iterator(img)])
 
 
-image_inside = load_tiff_stack("cropped_CT_scan.tiff")
-fg, bg = find_fg_bg(image_inside)
-n = 200
-image = np.full([s + n for s in image_inside.shape], bg, dtype="uint16")
-image[tuple(slice(n // 2, -n // 2, 1) for _ in range(3))] = image_inside
+# image_inside = load_tiff_stack("cropped_CT_scan.tiff")
+# fg, bg = find_fg_bg(image_inside)
+# n = 0
+# image = np.full([s + n for s in image_inside.shape], bg, dtype="uint16")
+# image[tuple(slice(n // 2, -n // 2, 1) for _ in range(3))] = image_inside
 
+image = load_tiff_stack("cropped_CT_scan.tiff")
 image = gaussian_filter(image, sigma=1)
 
 np.save("out_fitting/image.npy", image)
@@ -92,7 +93,7 @@ pb.constraints.add_eqs_from_inds_vals(inds, vals)
 pb.make_dirichlet()
 
 # %%
-u_field, rho = pb.solve(disable_parallel=False, verbose=True)
+u_field, rho = pb.solve(eps=6.5e-2, max_iter=30, disable_parallel=False, verbose=True)
 
 np.save("out_fitting/u_field.npy", u_field)
 
