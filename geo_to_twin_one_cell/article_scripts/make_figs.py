@@ -225,7 +225,7 @@ glyph_theta = body.merge(head, merge_points=False).translate(
     ref_point + 2 * t, inplace=False
 )
 
-pv_plotter = pv.Plotter()
+pv_plotter = pv.Plotter(window_size=(640, 720))
 pv_plotter.add_mesh(
     interior_mesh,
     color="white",
@@ -257,7 +257,7 @@ pv_plotter.show()
 interior_mesh = pv.read("../out_simu/results_interior_0_0.vtu")
 elem_mesh = pv.read("../out_simu/results_elements_borders_0_0.vtu")
 
-pv_plotter = pv.Plotter()
+pv_plotter = pv.Plotter(window_size=(640, 720))
 n_colors = 15
 sargs = dict(
     title="Von Mises Stress [MPa]\n",
@@ -302,7 +302,7 @@ pv_plotter.show()
 
 fe_mesh = pv.read("results_fe.vtk")
 
-pv_plotter = pv.Plotter()
+pv_plotter = pv.Plotter(window_size=(640, 720))
 n_colors = 15
 sargs = dict(
     title="Von Mises Stress [MPa]\n",
